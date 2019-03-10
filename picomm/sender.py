@@ -16,8 +16,3 @@ def send(throttle, steering, verbose=False):
         print("UDP target IP:", UDP_IP)
         print("UDP target port:", UDP_PORT)
         print("message:", 'MESSAGE'.encode('utf-8'))
-
-
-send(10, 20)
-send(-120, 120)
-send(100, -119, True)
