@@ -20,7 +20,3 @@ def encode(throttle, steering):
 
 def decode(packed):
     return unpack('ii', packed)
-
-cmd = encode(120, 120)
-print(cmd)
-print(decode(cmd))

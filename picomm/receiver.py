@@ -9,4 +9,6 @@ sock.bind((UDP_IP, UDP_PORT))
 
 while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-    print "received message:", decode(data)
+    throttle, steering = decode(data)
+    print('Throttle', throttle)
+    print('Steering', steering)
